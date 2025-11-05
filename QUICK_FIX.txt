@@ -1,0 +1,31 @@
+╔══════════════════════════════════════════════════════════╗
+║  🔥 QUICK FIX: "App Denied Access" / Greyed Out Toggle  ║
+╚══════════════════════════════════════════════════════════╝
+
+📱 THE ONE FIX THAT SOLVES EVERYTHING:
+
+1. Long-press app icon → "App info"
+2. Tap ⋮ (three dots, top-right)
+3. Tap "Allow restricted setting" ✨
+4. Confirm the warning
+5. NOW grant permissions again (SMS, Call logs, Phone)
+6. Enable Notification Access (now clickable!)
+7. Disable Battery Optimization
+
+DONE! Test by missing a call.
+
+═══════════════════════════════════════════════════════════
+
+🔧 IF YOU DON'T SEE "ALLOW RESTRICTED SETTING":
+
+Use ADB (connect phone to PC):
+  adb shell pm grant com.charlotteservicehub.autotext android.permission.SEND_SMS
+  adb shell pm grant com.charlotteservicehub.autotext android.permission.READ_CALL_LOG
+  adb shell pm grant com.charlotteservicehub.autotext android.permission.READ_PHONE_STATE
+
+Then enable Notification Access manually.
+
+═══════════════════════════════════════════════════════════
+
+📖 Full guide: See TROUBLESHOOTING.md
+
