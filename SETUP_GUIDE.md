@@ -61,6 +61,16 @@ Automatically sends an SMS from **your phone number (+1 407-234-5863)** when you
 
 ## ✅ Step 3: Configure the App (Critical!)
 
+### ⚠️ IMPORTANT: Sideloaded App Restrictions
+
+**If permissions are greyed out or you see "Controlled by Restricted Setting":**
+1. Open **App info** (long-press app icon)
+2. Tap **⋮ three-dot menu** (top-right)
+3. Tap **"Allow restricted setting"** and confirm
+4. Then proceed with steps below
+
+**See TROUBLESHOOTING.md for detailed help!**
+
 Open the AutoText app and tap each button IN ORDER:
 
 ### 1️⃣ Grant Permissions
@@ -141,6 +151,19 @@ if (hour < 8 || hour >= 21) return false  // 9pm-8am quiet
 ---
 
 ## 🐛 Troubleshooting
+
+### ⚠️ RESTRICTED SETTINGS (Most Common Issue!)
+
+**Symptoms:**
+- "App was denied access to SMS"
+- Notification Access toggle is **greyed out**
+- Says "Controlled by Restricted Setting"
+
+**Fix:**
+1. App info → **⋮ menu** → **"Allow restricted setting"**
+2. Then grant permissions again
+
+**📖 See TROUBLESHOOTING.md for complete guide!**
 
 ### Auto-text not sending?
 
