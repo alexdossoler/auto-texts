@@ -1,0 +1,98 @@
+═══════════════════════════════════════════════════════════════════════════
+                    AutoText Missed Call - QUICK START
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 GOAL: Auto-send SMS from your Boost number when you miss calls
+
+📞 Your Number: +1 407-234-5863
+
+═══════════════════════════════════════════════════════════════════════════
+                              BUILD THE APK
+═══════════════════════════════════════════════════════════════════════════
+
+METHOD 1: GitHub Actions (Easiest - 100% Cloud Build)
+───────────────────────────────────────────────────────────────────────────
+1. git init
+2. git add .
+3. git commit -m "AutoText app"
+4. Create new repo on GitHub.com
+5. git remote add origin https://github.com/YOUR_USERNAME/auto-texts.git
+6. git push -u origin main
+7. Go to repo → Actions tab → Download "app-debug" artifact
+
+METHOD 2: Android Studio (If you have access to Windows/Mac)
+───────────────────────────────────────────────────────────────────────────
+1. Copy this folder to a desktop computer
+2. Open in Android Studio
+3. Build → Build Bundle(s) / APK(s) → Build APK(s)
+4. APK location: app/build/outputs/apk/debug/app-debug.apk
+
+═══════════════════════════════════════════════════════════════════════════
+                         INSTALL ON YOUR PHONE
+═══════════════════════════════════════════════════════════════════════════
+
+1. Transfer app-debug.apk to phone (email/USB/cloud)
+2. Settings → Security → Enable "Unknown Sources"
+3. Tap the APK file to install
+4. Open "AutoText Missed Call" app
+
+═══════════════════════════════════════════════════════════════════════════
+                      CONFIGURE (CRITICAL STEPS!)
+═══════════════════════════════════════════════════════════════════════════
+
+In the app, tap these buttons IN ORDER:
+
+Button 1: "Grant Permissions"
+   → Allow: Phone, Call logs, SMS, Notifications
+
+Button 2: "Open Notification Access" (MOST IMPORTANT!)
+   → Find "AutoText Missed Call"
+   → Toggle ON
+   ⚠️  Without this, the app won't detect missed calls!
+
+Button 3: "Disable Battery Optimization"
+   → Find "AutoText Missed Call"
+   → Select "Don't optimize"
+   → Prevents Android from killing the app
+
+Button 4: "Send Test SMS" (optional)
+   → Tests if SMS permission works
+
+═══════════════════════════════════════════════════════════════════════════
+                              TEST IT!
+═══════════════════════════════════════════════════════════════════════════
+
+1. Have someone call your Boost number: +1 407-234-5863
+2. DON'T ANSWER
+3. They should receive this text within 2-5 seconds:
+
+   "Hey! It's Alejandro with Charlotte Service Hub—sorry I missed your 
+    call. You can text me here with what you need (pics welcome). 
+    Reply STOP to opt out."
+
+═══════════════════════════════════════════════════════════════════════════
+                           TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════
+
+❌ Not sending texts?
+   1. Check Notification Access is enabled (Settings → Notification Access)
+   2. Check Battery Optimization is disabled
+   3. Verify all permissions were granted
+   4. Reboot phone and test again
+
+❌ Sending to wrong number?
+   → Some phones don't include number in notification
+   → App falls back to call log (works for most devices)
+
+❌ Dual-SIM issues?
+   → Settings → SIM cards → Default for SMS → Select Boost SIM
+
+═══════════════════════════════════════════════════════════════════════════
+
+For detailed docs, see:
+- SETUP_GUIDE.md (complete setup instructions)
+- README_BUILD.md (build options)
+
+Questions? Check the Kotlin source files - they're well-commented!
+
+═══════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,2 @@
+rootProject.name = "AutoText Missed Call"
+include ':app'
