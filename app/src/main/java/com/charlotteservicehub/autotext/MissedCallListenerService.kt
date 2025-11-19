@@ -119,7 +119,7 @@ class MissedCallListenerService : NotificationListenerService() {
 
     private fun buildMessage(): String {
         // Tweak freely
-        return "Hey! It's Alejandro with Charlotte Service Hub—sorry I missed your call. " +
+        return "Hey! It's Alejandro with Spartanburg Service Hub—sorry I missed your call. " +
                 "You can text me here with what you need (pics welcome). Reply STOP to opt out."
     }
 
